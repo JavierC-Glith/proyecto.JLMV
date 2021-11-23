@@ -1,0 +1,119 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="span">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/style.css'%}">
+    <link rel="stylesheet" href="{% static '/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'%}" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <title>Calendario Semanal</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Ingresa tu horario</h1>
+
+        <div class="task__container">
+            <div class="task__name" id="break" style="background-color: #f7f779;">Matematicas</div>
+            <div class="task__name" id="gym" style="background-color: #f68080">Fisica</div>
+            <div class="task__name" id="study" style="background-color: #faae7b">Quimica</div>
+            <div class="task__name" id="tv" style="background-color: #2a9d8f">Historia</div>
+            <div class="task__name" id="friends" style="background-color: #a8dadc">Biologia</div>
+            <div class="task__name" id="work" style="background-color: #bdb2ff">Ed. Fisica</div>
+            <div class="task__name" id="deselect">Desenmarcar item</div>
+
+        </div>
+
+        <h3>Agrega la asignatura a tu horario</h3>
+
+        <div class="schedule__container">
+            <div class="days__container">
+                <span class="corner"></span>
+                <div class="day">Lunes</div>
+                <div class="day">Martes</div>
+                <div class="day">Miercoles</div>
+                <div class="day">Jueves</div>
+                <div class="day">Viernes</div>
+                <div class="day">Sabado</div>
+                <div class="day">Domingo</div>
+            </div>
+            <div class="part__day">
+                <span class="time">08:00 <br> - <br> 09:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+            <div class="part__day">
+                <span class="time">09:00 <br> - <br> 10:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+            <div class="part__day">
+                <span class="time">10:00 <br> - <br> 11:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+            <div class="part__day">
+                <span class="time">11:00 <br> - <br> 12:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+            <div class="part__day">
+                <span class="time">12:00 <br> - <br> 13:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+            <div class="part__day">
+                <span class="time">13:00 <br> - <br> 14:00</span>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+                <div class="task"></div>
+            </div>
+        </div>
+
+        <button class="deleteBtn">Reiniciar horario</button>
+
+        <div class="pop-up__container">
+            <div class="pop-up">
+                <h4>¿Estas seguro de eliminar los registros en tu horario?</h4>
+                <div class="btn__container">
+                    <div class="btn__answer" id="btn__yes">YES</div>
+                    <div class="btn__answer" id="btn__no">NO</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{% static '/main.js'%}"></script>
+</body>
+</html>
